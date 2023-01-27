@@ -6,15 +6,15 @@ export const providerOptions = {
     package: CoinbaseWalletSDK,
     options: {
       appName: "Project Sunrise",
-      rpc: "https://data-seed-prebsc-1-s1.binance.org:8545/",
-      chainId: 97, // Optional. It defaults to 1 if not provided
+      rpc: "https://bsc-dataseed1.binance.org",
+      chainId: 56, // Optional. It defaults to 1 if not provided
     },
   },
   walletconnect: {
     package: WalletConnectProvider, // required
     options: {
       rpc: {
-        97: "https://data-seed-prebsc-1-s1.binance.org:8545/",
+        56: "https://bsc-dataseed1.binance.org",
       },
     },
   },

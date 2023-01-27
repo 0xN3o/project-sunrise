@@ -29,7 +29,7 @@ export default function NFTList(props) {
 
     // Get nft owned from Moralis API
     let queryParam = {
-      chain: "bsc testnet",
+      chain: "bsc",
       token_addresses: NFT_CONTRACT,
       limit: 10,
     };
