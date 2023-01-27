@@ -4,7 +4,7 @@ export async function get_tree(contract, target, user) {
     .parentOfToken(target)
     .call()
     .then((tokenId) => {
-      parent = tokenId;
+      parent = tokenId === "0" ? "100000" : tokenId;
     });
   const colors = {
     [target]: "#FFE13F",
