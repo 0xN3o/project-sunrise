@@ -96,15 +96,7 @@ export default function BinaryTree(props) {
           </span>
         </div>
       ) : (
-        <Graph
-          key={uuid()}
-          graph={graph}
-          options={options}
-          events={events}
-          getNetwork={(network) => {
-            //  if you want access to vis.js network api you can set the state in a parent component using this property
-          }}
-        />
+        <Graph key={uuid()} graph={graph} options={options} events={events} />
       )}
     </div>
   );
