@@ -98,7 +98,7 @@ export default function MintForm(props) {
           </label>
           <p>
             The referral number is ERC-721 token ID. It is provided to you by
-            your invitee.
+            your referral.
           </p>
           <div className="mt-2 flex">
             <input
@@ -148,7 +148,7 @@ export default function MintForm(props) {
             {trimAddress(NFT_CONTRACT)} <LinkIcon className="w-4 ml-1" />
           </Link>
           <div className="pt-6 grid grid-cols-2">
-            <p className="my-auto">Per unit mint price:</p>
+            <p className="my-auto">Mint price per unit:</p>
             <p className="font-bold">0.15 BNB</p>
             <p className="my-auto">Total price:</p>
             <p className="font-bold">{totalPrice.toFixed(2)} BNB</p>

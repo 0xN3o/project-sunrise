@@ -12,61 +12,42 @@ export default function WhitepaperPage(props) {
       <div className="mt-10">
         <p className="mt-4 font-bold underline">A wake-up call</p>
         <p className="mt-4">
-          Why most NFT projects are a high risk where only a small number of
-          people will benefit from it. When a new NFT project launches, the
-          focus is often on building a community around the project and
-          positioning it as a brand with a promise of benefits for token
-          holders.{" "}
+          During the crypto bear market, many began to question the purpose and
+          sustainability of blockchain technology, with some even calling it a
+          scam. Products born out of blockchain technology, such as Non-Fungible
+          Tokens (NFTs), were met with ridicule as well. However, at Project
+          Sunrise, we are set on proving the usefulness of blockchain
+          technology, and specifically using NFTs as a tool to provide utility
+          and purpose.
         </p>
         <p className="mt-4">
-          The community is often driven by a "pump and dump" strategy, where the
-          goal is to make the project appear as desirable and inclusive as
-          possible. So to get the most profit, buy in early, get a few NFTs, and
-          sell it when the demand is high.
+          In keeping with the spirit of blockchain and Satoshi's peer-to-peer
+          monetary network, we have created an experimental pre-programmed
+          protocol that allows every participant to be a part of a growing
+          network and be rewarded for their involvement. NFTs are just one tool
+          used in this project, serving as a record on the blockchain to prove
+          the existence of users. It's important to note that this is not an NFT
+          project, as we are not selling digital art or other non-essential
+          items.
         </p>
         <p className="mt-4">
-          The critical factors of the success of all NFT projects depend on the
-          community decision (it can be a DAO) or the project founders
-          themselves. However, there is still high demand for human factors
-          where communitive influence is highly impacted towards the decision.
-        </p>
-        <p className="mt-4">
-          Why can this be a programmable protocol where each participant can act
-          as an individual actor but still benefit every participant?
-        </p>
-        <p className="mt-4">
-          Introduce you to Project Sunrise. The protocol is built to allow every
-          participant to earn in every market condition. This protocol is
-          independent of a significant cumulative decision. Participants execute
-          based on programmatically set requirements, and everyone will benefit.
-        </p>
-        <p className="mt-4">
-          It eliminates the risk of dependence on the project owners and allows
-          the protocol to operate autonomously for extended periods of time with
-          minimal costs for minting new tokens. It opens up a lot of new
-          possibilities and potential. This is the first NFT-based
-          "referral-to-earn" that was introduced in the world.
-        </p>
-        <p className="mt-4">
-          Satoshi came out with a brilliant whitepaper of the peer-to-peer
-          monetary network. And with the concept of anonymity and long-term
-          operability, we introduced an autonomous and decentralized NFT
-          "referral-to-earn" protocol.
+          This is just the first step, we welcome other developers to continue
+          to create new use cases by leveraging on our smart contract. We
+          believe in a truly decentralized world led by the community.
         </p>
       </div>
       <div className="mt-10">
         <p className="mt-4 font-bold underline">What is this project about?</p>
         <p className="mt-4">
-          An awesome NFT referral protocol that could reward you up to 436,900%
-          per token <span className="font-bold italic">(referral-to-earn)</span>
-          . Hey, shilling NFT projects is tiring. We get it. It's time for a
-          change. Project Sunrise is a decentralized, contract-verified,
-          autonomous protocol that primarily rewards the NFT owners (that's
-          you), not us.
+          Project sunrise is a social experiment that is built on the blockchain
+          to explore the concept of interconnectedness and how far a small
+          action can ripple through a network of people. It also demonstrates
+          the potential of blockchain technology to incentivize and reward
+          individuals for participating in a network.
         </p>
         <p className="mt-4">
-          Project Sunrise is not an investment program. Use this service at your
-          own risk.
+          Project Sunrise is not an investment. Use this service at your own
+          risk.
         </p>
       </div>
       <div className="mt-10">
@@ -99,9 +80,8 @@ export default function WhitepaperPage(props) {
           </li>
           <li>
             <span className="font-bold">GET REWARDED</span>: If your referral
-            mints an NFT, you'll instantly be rewarded. You will also
-            consistently receive rewards if your referral brings in new users,
-            and so on. The possibilities are endless.
+            mints an NFT, you’ll instantly be rewarded for your effort. You will
+            also consistently receive rewards when your network grows.
           </li>
         </ul>
       </div>
@@ -148,13 +128,24 @@ export default function WhitepaperPage(props) {
           </Link>
           .
         </p>
+        <p className="mt-4">
+          The experiment incentivizes earlier friends for each referral made.
+          The incentive is 0.01 BNB per person referred, up to a maximum of 15
+          tiers lower.
+        </p>
+        <p className="mt-4">
+          The person who initially purchased the NFT can earn a maximum reward
+          of 0.01 BNB for each person referred by their two friends, and so on,
+          up to 15 tiers lower.
+        </p>
       </div>
       <div className="mt-10">
         <p className="mt-4 font-bold underline">Maximum earnings per NFT</p>
         <p className="mt-4">
-          Each NFT can have a maximum of 2 referral NFTs, and the network
-          rewards are distributed to a maximum of 15 tiers. Therefore, the total
-          number of NFTs minted under the hierarchy is:
+          The estimated maximum reward for the person who initially purchased an
+          NFT is about 655 BNB. This is calculated by adding the maximum
+          possible referral reward of 0.01 BNB per person, up to 15 tiers lower.
+          Therefore, the total number of NFTs minted is:
         </p>
         <ul className="pl-6 mt-4 list-disc">
           <li>number_of_nft_below = (2 powOf 16) - 2 = 65,534</li>
@@ -164,9 +155,34 @@ export default function WhitepaperPage(props) {
           </li>
           <li>
             Each mint of 0.15 BNB has maximum potential earnings of 655.34 BNB
-            (~ 436,900%)
           </li>
         </ul>
+      </div>
+      <div className="mt-10">
+        <p className="mt-4 font-bold underline">Conclusion</p>
+        <p className="mt-4">
+          Project Sunrise smart contract is deployed on the Binance Smart Chain,
+          which uses BNB cryptocurrency, one of the top 5 cryptocurrencies by
+          market cap. The contract is verified and open for everyone to review.
+          Every single BNB collected from each holder is given back to the
+          holder before as a referral incentive. There is no centralized
+          organization, person or company that governs the process. It is a
+          fully autonomous and decentralized protocol without enriching anyone
+          in particular.
+        </p>
+        <p className="mt-4">
+          We hope that the community will support this experiment and continue
+          to build functions and use cases around the platform by leveraging on
+          our smart contract.
+        </p>
+        <p className="mt-4">
+          In conclusion, this social experiment is a creative way to study human
+          behavior and the power of social networks. It also showcases the
+          potential of blockchain technology in creating new incentives and
+          reward systems. This experiment is a perfect example of how blockchain
+          technology can be used to drive social change and create new
+          opportunities for individuals.
+        </p>
       </div>
     </div>
   );
