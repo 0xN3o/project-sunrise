@@ -120,9 +120,9 @@ export default function ProductDetails(props) {
       </div>
       <div className="mx-12 py-12 text-center">
         <h3 className="font-bold text-2xl lg:text-4xl text-black">
-          Join our social experiment and explore the power of interconnectedness
-          through blockchain technology. Mint, obtain your referral and let your
-          network grow.
+          Join us as we explore the power of interconnectedness through
+          blockchain technology. Mint, obtain your referral and let your network
+          grow.
         </h3>
         <p className="text-black pt-2">
           To understand how this works, read the project{" "}
