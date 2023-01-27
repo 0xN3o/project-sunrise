@@ -35,6 +35,11 @@ export default function Footer(props) {
       name: "Transaction",
       link: `${EXPLORER_URL}/address/${NFT_CONTRACT}`,
     },
+    {
+      key: "3",
+      name: "Github",
+      link: "https://github.com/0xN3o/project-sunrise",
+    },
   ];
 
   return (
