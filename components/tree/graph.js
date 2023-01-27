@@ -38,24 +38,31 @@ export default function BinaryTree(props) {
     height: "100%",
     width: "100%",
     edges: {
+      chosen: false,
       color: "#000",
       arrows: {
         to: false,
       },
+      width: 2,
     },
     nodes: {
+      borderWidth: 3,
+      chosen: false,
       color: {
         border: "#000",
         background: "#fff",
-        // hightlight: {
-        //   border: "#000",
-        //   background: "#fff",
-        // },
       },
       font: {
         color: "#000",
+        face: "Chivo Mono",
+        strokeWidth: 0.2,
+        strokeColor: "#000",
       },
-      shape: "circle",
+      shape: "box",
+      shapeProperties: {
+        borderRadius: 0,
+      },
+      size: 30,
     },
     layout: {
       hierarchical: {
@@ -66,6 +73,8 @@ export default function BinaryTree(props) {
     interaction: {
       selectable: true,
       selectConnectedEdges: false,
+      dragView: false,
+      zoomView: false,
     },
   };
 
