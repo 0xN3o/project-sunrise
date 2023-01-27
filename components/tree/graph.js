@@ -80,7 +80,7 @@ export default function BinaryTree(props) {
 
   const events = {
     select: function (event) {
-      var { nodes, edges } = event;
+      var { nodes } = event;
       if (nodes.length) {
         updateGraph(nodes[0]);
       }
