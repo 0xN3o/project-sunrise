@@ -161,14 +161,13 @@ export default function WhitepaperPage(props) {
       <div className="mt-10">
         <p className="mt-4 font-bold underline">Conclusion</p>
         <p className="mt-4">
-          Project Sunrise smart contract is deployed on the Binance Smart Chain,
-          which uses BNB cryptocurrency, one of the top 5 cryptocurrencies by
-          market cap. The contract is verified and open for everyone to review.
-          Every single BNB collected from each holder is given back to the
-          holder before as a referral incentive. There is no centralized
-          organization, person or company that governs the process. It is a
-          fully autonomous and decentralized protocol without enriching anyone
-          in particular.
+          Project Sunrise smart contract is deployed on the BNB Chain, which
+          uses BNB cryptocurrency, one of the top 5 cryptocurrencies by market
+          cap. The contract is verified and open for everyone to review. Every
+          single BNB collected from each holder is given back to the holder
+          before as a referral incentive. There is no centralized organization,
+          person or company that governs the process. It is a fully autonomous
+          and decentralized protocol without enriching anyone in particular.
         </p>
         <p className="mt-4">
           We hope that the community will support this experiment and continue
