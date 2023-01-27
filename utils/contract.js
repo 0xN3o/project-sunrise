@@ -7,8 +7,8 @@ export async function get_tree(contract, target, user) {
       parent = tokenId;
     });
   const colors = {
-    [target]: "#aaa",
-    [user]: "#3f3",
+    [target]: "#FFE13F",
+    [user]: "#128CC1",
   };
   return await get_children(parent, contract, colors);
 }
@@ -24,7 +24,7 @@ async function get_children(root, contract, colors) {
     nfts.push({
       id: parent,
       label: parent,
-      color: colors[parent],
+      color: { background: colors[parent] },
     });
     if (cur_depth < max_depth) {
       let children;
