@@ -93,9 +93,8 @@ export default function WhitepaperPage(props) {
           NFT minted act as a pass or a membership to obtain a referral id which
           can later be used to mint more NFTs. Each NFT costs 0.15 BNB, and the
           amount collected will be added to a pool that is distributed as a
-          reward to the earlier participant. The pool support up to 15 tier
-          above the current referral (0.01 BNB each). In addition, this project
-          does not collect any fees.
+          reward to the earlier participant. In addition, this project does not
+          collect any fees.
         </p>
         <ul className="pl-6 mt-4 list-disc">
           <li className="mb-4">
