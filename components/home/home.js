@@ -10,15 +10,15 @@ export default function PageHome(props) {
     <div className="mx-auto px-4 lg:px-12 py-12 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 text-black">
       <div className="col-span-1">
         <h1 className="font-bold text-3xl lg:text-5xl">
-          NFT <span className="text-themeBlue italic">"referral-to-earn"</span>{" "}
-          protocol that reward you up to 436,900% per token.
+          <span className="text-themeBlue italic">"Refer-to-earn"</span> your
+          way to collective ownership with Project Sunrise
         </h1>
         <p className="mt-4">
-          Are you tired of shilling your favorite NFT project, hoping it to go
-          to the moon? Are you fed up with all NFT projects that mainly benefit
-          the project team? Be part of Project Sunrise, decentralized, contract
-          verified and rug-proof. It runs autonomously, which will primarily
-          reward the NFT owner.
+          Project Sunrise is a one-of-a-kind social experiment protocol that
+          uses NFTs as a tool to build the single, largest owners in DeFi
+          eco-system and be rewarded as we go. It is decentralized, contract
+          verified, and autonomous. No floor price, no mods, no pump, nor rugs,
+          no co-founder, and no discord. It incentivizes you, not us.
         </p>
         <p className="mt-4">
           Read the project{" "}

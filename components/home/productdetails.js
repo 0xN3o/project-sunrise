@@ -18,9 +18,9 @@ export default function ProductDetails(props) {
           </h2>
           <p className="mt-4">
             This project requires no admin or supervision. The contract is
-            deployed on the blockchain. It relies on you to utilize its service,
-            and you benefit from it. The bigger your network grows, the more
-            significant rewards you receive.
+            deployed on the blockchain. It incentivizes you when you are part of
+            the network. The bigger your network grows, the more things you can
+            do as a collective. It’s up to your creativity!
           </p>
         </div>
         {/* <div className="col-span-1 bg-themeYellow border-4 border-black p-6">
@@ -35,17 +35,18 @@ export default function ProductDetails(props) {
         </div> */}
         <div className="col-span-1 bg-themeYellow border-4 border-black p-6">
           <h2 className="font-bold border-b-2 border-black border-dashed pb-4">
-            Fair rewards distributions.
+            Fair incentives distributions.
           </h2>
           <p className="mt-4">
-            You will be rewarded if your network expands.{" "}
+            You will be incentivized if your network expands.{" "}
             <span className="font-bold italic">
-              Each NFT requires a minimum of 2 referral activation
-            </span>{" "}
-            before you can redeem its rewards. That{`'`}s it. If you have
-            completed your two referrals, subsequent users who use your referral
-            will be auto-assigned to those under your network accordingly. And
-            everyone will enjoy the rewards and benefits!
+              Each NFT requires a minimum of 2 referral activations before you
+              can redeem
+            </span>
+            . That's it. Once 2 referral activation is complete, subsequent
+            users who use your referral will be auto-assigned to those under
+            your network accordingly. And everyone will have a fair chance to
+            get incentives.
           </p>
         </div>
         <div className="col-span-1 bg-themeYellow border-4 border-black p-6">
@@ -119,8 +120,9 @@ export default function ProductDetails(props) {
       </div>
       <div className="mx-12 py-12 text-center">
         <h3 className="font-bold text-2xl lg:text-4xl text-black">
-          Degen now, mint and obtain your referral. Let your network grow and
-          get rewarded.
+          Join our social experiment and explore the power of interconnectedness
+          through blockchain technology. Mint, obtain your referral and let your
+          network grow.
         </h3>
         <p className="text-black pt-2">
           To understand how this works, read the project{" "}
