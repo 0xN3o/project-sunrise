@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useAppContext } from "../context/appcontext";
 import { EXPLORER_URL, NFT_CONTRACT, BASE_URL } from "../constants";
-import { ClipboardDocumentIcon } from "@heroicons/react/24/solid";
 
 export default function NFTCard(props) {
   const { web3, contract, account, appModal, setAppModal } = useAppContext();
@@ -106,9 +105,19 @@ export default function NFTCard(props) {
           >
             {nft.token_id}
           </Link>
-          <button className="p-2" onClick={clipboardClicked}>
-            <ClipboardDocumentIcon className="w-4 h-4" />
+          <button
+            className="ml-1 p-1 text-xs hover:underline"
+            onClick={clipboardClicked}
+          >
+            Copy
           </button>
+          |
+          <Link
+            className="p-1 text-xs hover:underline"
+            href={`/tree/${nft.token_id}`}
+          >
+            Expand
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
