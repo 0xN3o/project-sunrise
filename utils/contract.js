@@ -1,4 +1,4 @@
-export async function get_tree(contract, target, user) {
+export async function getTree(contract, target, user) {
   let parent;
   await contract.methods
     .parentOfToken(target)
@@ -10,10 +10,10 @@ export async function get_tree(contract, target, user) {
     [target]: "#FFE13F",
     [user]: "#128CC1",
   };
-  return await get_children(parent, contract, colors);
+  return await getChildren(parent, contract, colors);
 }
 
-async function get_children(root, contract, colors) {
+async function getChildren(root, contract, colors) {
   let nfts = [];
   let connections = [];
 

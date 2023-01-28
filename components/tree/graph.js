@@ -1,6 +1,6 @@
 import { useAppContext } from "../context/appcontext";
 
-import { get_tree } from "../../utils/contract";
+import { getTree } from "../../utils/contract";
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 const Graph = dynamic(
@@ -20,7 +20,7 @@ export default function BinaryTree(props) {
   }, [contract]);
 
   async function updateGraph(tokenId) {
-    const { connections, nfts } = await get_tree(contract, tokenId, user);
+    const { connections, nfts } = await getTree(contract, tokenId, user);
     setGraph({
       nodes: nfts,
       edges: connections,
@@ -88,16 +88,19 @@ export default function BinaryTree(props) {
   };
 
   return (
-    <div className="h-screen">
-      {graph.nodes.length === 0 ? (
-        <div className="bg-black text-white grid pb-2">
-          <span className="m-auto">
-            Loading... (Please connect your wallet if you havent already)
-          </span>
-        </div>
-      ) : (
-        <Graph key={uuid()} graph={graph} options={options} events={events} />
-      )}
+    <div className="mx-auto px-4 lg:px-12 py-12 max-w-7xl text-black">
+      <h1 className="font-bold text-3xl lg:text-5xl">Tree Explorer</h1>
+      <p className="mt-4">
+        Tree explorer shows you the current on-chain NFT structure of Project
+        Sunrise. Click on the rectangle to expand its child.
+      </p>
+      <div className="mt-4 h-screen bg-gray-200 border-4 border-black border-dashed p-4">
+        {graph.nodes.length === 0 ? (
+          <>Please connect your wallet to view the tree info.</>
+        ) : (
+          <Graph key={uuid()} graph={graph} options={options} events={events} />
+        )}
+      </div>
     </div>
   );
 }

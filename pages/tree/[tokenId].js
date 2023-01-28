@@ -4,15 +4,15 @@ import Footer from "../../components/footer/footer";
 import BinaryTree from "../../components/tree/graph";
 import { useRouter } from "next/router";
 
-export default function Home() {
+export default function TreeExplorer() {
   const router = useRouter();
-  const { userTokenId } = router.query;
+  const { tokenId } = router.query;
   return (
     <div>
-      <PageHead title="Home" />
+      <PageHead title="Tree Explorer" />
       <main>
-        <Navbar activeKey="home" />
-        <BinaryTree target={userTokenId} user={userTokenId} />
+        <Navbar activeKey="tree-explorer" />
+        <BinaryTree target={tokenId} user={tokenId} />
       </main>
       <Footer />
     </div>
