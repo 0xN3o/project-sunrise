@@ -23,7 +23,7 @@ async function getChildren(root, contract, colors) {
     const [parent, cur_depth] = queue.shift();
     nfts.push({
       id: parent,
-      label: parent,
+      label: "NFT ID:\n" + parent,
       color: { background: colors[parent] },
     });
     if (cur_depth < max_depth) {

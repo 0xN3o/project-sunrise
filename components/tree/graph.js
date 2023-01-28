@@ -10,7 +10,7 @@ const Graph = dynamic(
 import { uuid } from "uuidv4";
 
 export default function BinaryTree(props) {
-  const { contract } = useAppContext();
+  const { contract, appModal, setAppModal } = useAppContext();
   const { target, user } = props;
 
   useEffect(() => {
@@ -20,19 +20,40 @@ export default function BinaryTree(props) {
   }, [contract]);
 
   async function updateGraph(tokenId) {
+    // Show loading
+    setAppModal({
+      ...appModal,
+      show: true,
+      type: "progress",
+      title: "Loading",
+      description: "Fetching on-chain data.",
+    });
+
     const { connections, nfts } = await getTree(contract, tokenId, user);
     setGraph({
       nodes: nfts,
       edges: connections,
     });
+
+    // Hide loading
+    setAppModal({
+      ...appModal,
+      show: false,
+      type: "progress",
+      title: "Loading",
+      description: "Fetching on-chain data.",
+    });
   }
+
   async function init() {
     updateGraph(target);
   }
+
   const [graph, setGraph] = useState({
     nodes: [],
     edges: [],
   });
+
   const options = {
     autoResize: true,
     height: "100%",
@@ -46,7 +67,7 @@ export default function BinaryTree(props) {
       width: 2,
     },
     nodes: {
-      borderWidth: 3,
+      borderWidth: 4,
       chosen: false,
       color: {
         border: "#000",
@@ -61,6 +82,12 @@ export default function BinaryTree(props) {
       shape: "box",
       shapeProperties: {
         borderRadius: 0,
+      },
+      margin: {
+        top: 20,
+        right: 20,
+        bottom: 20,
+        left: 20,
       },
       size: 30,
     },
