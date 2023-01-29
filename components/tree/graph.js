@@ -79,17 +79,14 @@ export default function BinaryTree(props) {
         strokeWidth: 0.2,
         strokeColor: "#000",
       },
-      shape: "box",
-      shapeProperties: {
-        borderRadius: 0,
-      },
+      shape: "custom",
       margin: {
         top: 20,
         right: 20,
         bottom: 20,
         left: 20,
       },
-      size: 30,
+      size: 80,
     },
     layout: {
       hierarchical: {

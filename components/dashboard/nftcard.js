@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useAppContext } from "../context/appcontext";
 import { EXPLORER_URL, NFT_CONTRACT, BASE_URL } from "../constants";
+import Art from "../nft/art";
+import { getOwnerOf, getParentOf } from "../../utils/contract";
 
 export default function NFTCard(props) {
   const { web3, contract, account, appModal, setAppModal } = useAppContext();
@@ -12,12 +14,16 @@ export default function NFTCard(props) {
   const [totalRewards, setTotalRewards] = useState("Loading..");
   const [available, setAvailable] = useState("Loading..");
   const [allowRedeem, setAllowRedeem] = useState(false);
+  const [parent, setParent] = useState(false);
 
   useEffect(() => {
     getOnChainData();
   });
 
   async function getOnChainData() {
+    setParent(
+      await getOwnerOf(contract, await getParentOf(contract, nft.token_id))
+    );
     const _available = parseFloat(
       web3.utils.fromWei(
         await contract.methods.availableRewards(parseInt(nft.token_id)).call(),
@@ -92,8 +98,10 @@ export default function NFTCard(props) {
   return (
     <div className="flex flex-col lg:flex-row gap-4 mt-4 p-4 bg-themeOrange border-black border-4">
       <div className="flex flex-1 items-center gap-4">
-        <div className="bg-white rounded-full p-2">
-          <CubeIcon className="w-4 h-4" />
+        <div className="bg-white p-2 w-24 h-24">
+          {parent && (
+            <Art nft={nft.token_id} user={nft.owner_of} parent={parent} />
+          )}
         </div>
         <div>
           <p className="text-sm">NFT ID (Referral no.)</p>
@@ -120,7 +128,7 @@ export default function NFTCard(props) {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 my-auto">
         <div>
           <p className="text-sm">Referral use</p>
           <p className="text-xl font-bold">{referralUse}</p>
@@ -136,14 +144,14 @@ export default function NFTCard(props) {
       </div>
       {allowRedeem && (
         <button
-          className="py-2 px-6 bg-white duration-100 hover:-translate-y-1 hover:bg-themeYellow border-4 border-black font-bold"
+          className="my-auto py-2 px-6 bg-white duration-100 hover:-translate-y-1 hover:bg-themeYellow border-4 border-black font-bold"
           onClick={redeem}
         >
           Redeem
         </button>
       )}
       {!allowRedeem && (
-        <div className="py-2 px-6 bg-white border-4 border-black border-dashed font-bold opacity-25">
+        <div className="my-auto py-2 px-6 bg-white border-4 border-black border-dashed font-bold opacity-25">
           Redeem
         </div>
       )}
