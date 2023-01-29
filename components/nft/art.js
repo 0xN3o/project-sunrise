@@ -6,7 +6,7 @@ export default function Art(props) {
 
   useEffect(() => {
     if (canvas) {
-      renderArt(user, parent, nft, canvas);
+      renderArt(user, parent, nft, canvas.current);
     }
   }, []);
 

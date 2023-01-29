@@ -13,6 +13,6 @@ export function renderArt(user, parent, nft, canvas) {
       size: 16,
       scale: 10,
     },
-    canvas.current
+    canvas
   );
 }
