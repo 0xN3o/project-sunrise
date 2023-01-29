@@ -1,11 +1,14 @@
-export async function getTree(contract, target, user) {
-  let parent;
-  await contract.methods
-    .parentOfToken(target)
+export async function getParentOf(contract, tokenId) {
+  return await contract.methods
+    .parentOfToken(tokenId)
     .call()
-    .then((tokenId) => {
-      parent = tokenId === "0" ? "100000" : tokenId;
+    .then((parent) => {
+      return parent === "0" ? "100000" : parent;
     });
+}
+
+export async function getTree(contract, target, user) {
+  let parent = await getParentOf(contract, target);
   const colors = {
     [target]: "#FFE13F",
     [user]: "#128CC1",
