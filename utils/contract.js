@@ -47,6 +47,7 @@ async function getChildren(
     nfts.push({
       id: selfTokenId,
       label: "NFT ID:\n" + selfTokenId,
+      // TODO: seperate this to another function
       ctxRenderer: createCtxRenderer(selfAddress, parentAddress, selfTokenId),
     });
     if (cur_depth < max_depth) {
