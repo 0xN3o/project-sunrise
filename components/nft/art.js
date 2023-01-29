@@ -5,7 +5,6 @@ export default function Art(props) {
   const { user, parent, nft } = props;
 
   useEffect(() => {
-    console.log(nft, user, parent);
     if (canvas) {
       renderIcon(
         {
