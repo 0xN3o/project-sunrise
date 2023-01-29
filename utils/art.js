@@ -1,10 +1,10 @@
 import { renderIcon } from "@carrotn0se/blockies";
-export function renderArt(user, parent, nft, canvas) {
+export function renderArt(user, parent, tokenId, canvas) {
   renderIcon(
     {
-      patternseed: nft,
-      colorseed: user,
-      spotcolorseed: parent,
+      patternseed: tokenId.toString().toLowerCase(),
+      colorseed: user.toString().toLowerCase(),
+      spotcolorseed: parent.toString().toLowerCase(),
       bgcolor: "#222",
       bgcolorratio: 10,
       colorratio: 4,
