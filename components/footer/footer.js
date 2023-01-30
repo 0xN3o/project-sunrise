@@ -90,10 +90,9 @@ export default function Footer(props) {
             </p>
           </div>
           <p className="mt-6">
-            Project Sunrise is a social and experimental decentralized
-            application that aims to explore the power of interconnectedness
-            through blockchain. It is not an investment program. Use this
-            service at your own risk.
+            Project Sunrise is an autonomous and decentralized application that
+            utilizes NFTs as a "refer-to-earn" protocol mechanism. It is not an
+            investment program. Use this service at your own risk.
           </p>
         </div>
       </div>

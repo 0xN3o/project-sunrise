@@ -17,10 +17,11 @@ export default function ProductDetails(props) {
             Autonomous, it runs on its own.
           </h2>
           <p className="mt-4">
-            This project requires no admin or supervision. The contract is
-            deployed on the blockchain. It incentivizes you when you are part of
-            the network. The bigger your network grows, the more things you can
-            do as a collective. It’s up to your creativity!
+            This project requires no admin or supervision. It incentivizes you
+            when you are part of the network. The contract admin or deployer has
+            no special access to your rewards. It is autonomous and runs on its
+            own. The bigger your network grows, the more significant rewards you
+            receive.
           </p>
         </div>
         {/* <div className="col-span-1 bg-themeYellow border-4 border-black p-6">
@@ -54,14 +55,24 @@ export default function ProductDetails(props) {
             Trust the code, not us.
           </h2>
           <p className="mt-4">
-            Smart-Contract of this service is verified and can be viewed{" "}
+            Smart-Contract and the front-end of this service are verified and
+            open source. You can view the project on{" "}
+            <Link
+              className="font-bold hover:underline"
+              href="https://github.com/0xN3o/project-sunrise"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </Link>{" "}
+            and the contract on{" "}
             <Link
               className="font-bold hover:underline"
               href={`${EXPLORER_URL}/token/${NFT_CONTRACT}#code`}
               target="_blank"
               rel="noreferrer"
             >
-              here
+              BSCScan
             </Link>
             . The rule is to trust the code and review it yourself. Those who
             manage to expand their network will get the most rewards. Not us.
@@ -120,9 +131,8 @@ export default function ProductDetails(props) {
       </div>
       <div className="mx-12 py-12 text-center">
         <h3 className="font-bold text-2xl lg:text-4xl text-black">
-          Join us as we explore the power of interconnectedness through
-          blockchain technology. Mint, obtain your referral and let your network
-          grow.
+          Degen now, mint and obtain your referral. Let your network grow and
+          get rewarded.
         </h3>
         <p className="text-black pt-2">
           To understand how this works, read the project{" "}

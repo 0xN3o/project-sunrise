@@ -7,7 +7,7 @@ export default function PageHead(props) {
     : "Project Sunrise";
   const description = props.description
     ? props.description
-    : 'Most awesome NFT "referral-to-earn" protocol that reward you up to 436,900% per token.';
+    : 'Most awesome NFT "refer-to-earn" protocol that reward you up to 436,900% per token.';
   const url = props.url
     ? `https://projectsunrise.net/${props.url}`
     : "https://projectsunrise.net";

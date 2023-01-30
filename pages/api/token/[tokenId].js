@@ -12,7 +12,7 @@ export default function handler(req, res) {
         { trait_type: "type", value: "Referral Pass" },
       ],
       description:
-        "An awesome NFT referral-to-earn protocol that could reward you up to 436,900% per token. Project Sunrise is a decentralized, contract-verified, autonomous protocol that primarily rewards NFT owners. For more info, visit https://projectsunrise.net",
+        "An awesome NFT refer-to-earn protocol that could reward you up to 436,900% per token. Project Sunrise is a decentralized, contract-verified, autonomous protocol that primarily rewards NFT owners. For more info, visit https://projectsunrise.net",
     };
 
     res.status(200).json(data);

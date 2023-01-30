@@ -12,28 +12,46 @@ export default function WhitepaperPage(props) {
       <div className="mt-10">
         <p className="mt-4 font-bold underline">A wake-up call</p>
         <p className="mt-4">
-          During the crypto bear market, many began to question the purpose and
-          sustainability of blockchain technology, with some even calling it a
-          scam. Products born out of blockchain technology, such as Non-Fungible
-          Tokens (NFTs), were met with ridicule as well. However, at Project
-          Sunrise, we are set on proving the usefulness of blockchain
-          technology, and specifically using NFTs as a tool to provide utility
-          and purpose.
+          Why most NFT projects are a high risk where only a small number of
+          people will benefit from it. When a new NFT project launches, the
+          focus is often on building a community around the project and
+          positioning it as a brand with a promise of benefits for token
+          holders.{" "}
         </p>
         <p className="mt-4">
-          In keeping with the spirit of blockchain and Satoshi's peer-to-peer
-          monetary network, we have created an experimental pre-programmed
-          protocol that allows every participant to be a part of a growing
-          network and be rewarded for their involvement. NFTs are just one tool
-          used in this project, serving as a record on the blockchain to prove
-          the existence of users. It's important to note that this is not an NFT
-          project, as we are not selling digital art or other non-essential
-          items.
+          The community is often driven by a "pump and dump" strategy, where the
+          goal is to make the project appear as desirable and inclusive as
+          possible. So to get the most profit, buy in early, get a few NFTs, and
+          sell it when the demand is high.
         </p>
         <p className="mt-4">
-          This is just the first step, we welcome other developers to continue
-          to create new use cases by leveraging on our smart contract. We
-          believe in a truly decentralized world led by the community.
+          The critical factors of the success of all NFT projects depend on the
+          community decision (it can be a DAO) or the project founders
+          themselves. However, there is still high demand for human factors
+          where communitive influence is highly impacted towards the decision.
+        </p>
+        <p className="mt-4">
+          Why can this be a programmable protocol where each participant can act
+          as an individual actor but still benefit every participant?
+        </p>
+        <p className="mt-4">
+          Introduce you to Project Sunrise. The protocol is built to allow every
+          participant to earn in every market condition. This protocol is
+          independent of a significant cumulative decision. Participants execute
+          based on programmatically set requirements, and everyone will benefit.
+        </p>
+        <p className="mt-4">
+          It eliminates the risk of dependence on the project owners and allows
+          the protocol to operate autonomously for extended periods of time with
+          minimal costs for minting new tokens. It opens up a lot of new
+          possibilities and potential. This is the first NFT-based
+          "refer-to-earn" that was introduced in the world.
+        </p>
+        <p className="mt-4">
+          Satoshi came out with a brilliant whitepaper of the peer-to-peer
+          monetary network. And with the concept of anonymity and long-term
+          operability, we introduced an autonomous and decentralized NFT
+          "refer-to-earn" protocol.
         </p>
       </div>
       <div className="mt-10">
@@ -80,7 +98,7 @@ export default function WhitepaperPage(props) {
           </li>
           <li>
             <span className="font-bold">GET REWARDED</span>: If your referral
-            mints an NFT, you’ll instantly be rewarded for your effort. You will
+            mints an NFT, you'll instantly be rewarded for your effort. You will
             also consistently receive rewards when your network grows.
           </li>
         </ul>
@@ -128,9 +146,9 @@ export default function WhitepaperPage(props) {
           .
         </p>
         <p className="mt-4">
-          The experiment incentivizes earlier friends for each referral made.
-          The incentive is 0.01 BNB per person referred, up to a maximum of 15
-          tiers lower.
+          The protocol incentivizes earlier friends for each referral made. The
+          incentive is 0.01 BNB per person referred, up to a maximum of 15 tiers
+          lower.
         </p>
         <p className="mt-4">
           The person who initially purchased the NFT can earn a maximum reward
@@ -169,17 +187,12 @@ export default function WhitepaperPage(props) {
           and decentralized protocol without enriching anyone in particular.
         </p>
         <p className="mt-4">
-          We hope that the community will support this experiment and continue
-          to build functions and use cases around the platform by leveraging on
-          our smart contract.
-        </p>
-        <p className="mt-4">
-          In conclusion, this social experiment is a creative way to study human
-          behavior and the power of social networks. It also showcases the
-          potential of blockchain technology in creating new incentives and
-          reward systems. This experiment is a perfect example of how blockchain
-          technology can be used to drive social change and create new
-          opportunities for individuals.
+          This social experiment is a creative way to study human behavior and
+          the power of social networks. It also showcases the potential of
+          blockchain technology in creating new incentives and reward systems.
+          This experiment is a perfect example of how blockchain technology can
+          be used to drive social change and create new opportunities for
+          individuals.
         </p>
       </div>
     </div>
