@@ -86,7 +86,7 @@ export default function MintForm(props) {
 
   return (
     <div className="w-full mx-auto max-w-lg">
-      Bring it ON; #ProjectSunrise is awesome!
+      Build by degens, for degens. #ProjectSunrise
       <form
         className="mt-2 bg-themeRed border-black border-4 p-4"
         onSubmit={formSubmit}
