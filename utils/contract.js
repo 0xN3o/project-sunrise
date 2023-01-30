@@ -27,6 +27,8 @@ export async function getTree(contract, target, user) {
     parentToken,
     parentAddress,
     grandparentAddress,
+    user,
+    target,
     contract
   );
 }
@@ -35,6 +37,8 @@ async function getChildren(
   rootToken,
   rootTokenAddress,
   rootParentAddress,
+  user,
+  target,
   contract
 ) {
   let nfts = [];
@@ -48,7 +52,16 @@ async function getChildren(
       id: selfTokenId,
       label: "NFT ID:\n" + selfTokenId,
       // TODO: seperate this to another function
-      ctxRenderer: createCtxRenderer(selfAddress, parentAddress, selfTokenId),
+      ctxRenderer: createCtxRenderer(
+        selfAddress,
+        parentAddress,
+        selfTokenId,
+        selfTokenId === user
+          ? "#FFE13F"
+          : selfTokenId === target
+          ? "#128CC1"
+          : null
+      ),
     });
     if (cur_depth < max_depth) {
       let children;
