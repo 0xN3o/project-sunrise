@@ -67,25 +67,8 @@ export default function BinaryTree(props) {
       width: 2,
     },
     nodes: {
-      borderWidth: 4,
       chosen: false,
-      color: {
-        border: "#000",
-        background: "#fff",
-      },
-      font: {
-        color: "#000",
-        face: "Chivo Mono",
-        strokeWidth: 0.2,
-        strokeColor: "#000",
-      },
       shape: "custom",
-      margin: {
-        top: 20,
-        right: 20,
-        bottom: 20,
-        left: 20,
-      },
       size: 80,
     },
     layout: {
