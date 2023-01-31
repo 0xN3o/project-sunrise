@@ -1,7 +1,7 @@
 import { FireIcon } from "@heroicons/react/24/solid";
 import { LinkIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAppContext } from "../context/appcontext";
 import { trimAddress } from "../helper";
 import { EXPLORER_URL, NFT_CONTRACT } from "../constants";
@@ -20,7 +20,28 @@ export default function MintForm(props) {
   const qtyRef = useRef();
 
   // State
-  const [totalPrice, setTotalPrice] = useState(0.15);
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [bnbPrice, setBnbPrice] = useState(0);
+
+  useEffect(() => {
+    // Get price data from CoinGecko
+    getBnbPrice();
+  }, []);
+
+  async function getBnbPrice() {
+    const response = await fetch(
+      "https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd",
+      {
+        method: "GET",
+      }
+    );
+
+    // To confirm respond status is ok
+    if (response.ok) {
+      const data = await response.json();
+      setBnbPrice(data["binancecoin"]["usd"]);
+    }
+  }
 
   function qtyChange(event) {
     const total = event.target.value * 0.15;
@@ -149,9 +170,23 @@ export default function MintForm(props) {
           </Link>
           <div className="pt-6 grid grid-cols-2">
             <p className="my-auto">Mint price per unit:</p>
-            <p className="font-bold">0.15 BNB</p>
+            <p className="font-bold">
+              0.15 BNB{" "}
+              {bnbPrice > 0 && (
+                <span className="font-normal text-sm">
+                  ~ ${parseFloat(bnbPrice * 0.15).toFixed(2)}
+                </span>
+              )}
+            </p>
             <p className="my-auto">Total price:</p>
-            <p className="font-bold">{totalPrice.toFixed(2)} BNB</p>
+            <p className="font-bold">
+              {totalPrice.toFixed(2)} BNB{" "}
+              {bnbPrice > 0 && (
+                <span className="font-normal text-sm">
+                  ~ ${parseFloat(bnbPrice * totalPrice).toFixed(2)}
+                </span>
+              )}
+            </p>
           </div>
         </div>
         {/* T&C */}
