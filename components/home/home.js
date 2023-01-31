@@ -15,10 +15,13 @@ export default function PageHome(props) {
         </h1>
         <p className="mt-4">
           Hey, shilling NFT projects is tiring. We get it. How often have you
-          opt-in to an NFT project, hoping it goes to the moon, only to be
-          rugged by the team? It's time for a change. Project Sunrise is a
-          decentralized, contract-verified, autonomous program that primarily
-          rewards the NFT owners (that's you), not us.
+          degen to an NFT project, hoping it goes to the moon, only to be rugged
+          by the team?
+        </p>
+        <p className="mt-2">
+          It's time for a change. Project Sunrise is a decentralized,
+          contract-verified, autonomous program that prioritizes rewards for the
+          NFT owners (that's you), not us.
         </p>
         <p className="mt-4">
           Read the project{" "}
