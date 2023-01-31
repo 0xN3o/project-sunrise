@@ -154,7 +154,8 @@ export default function WhitepaperPage(props) {
         <p className="mt-4">
           The person who initially purchased the NFT can earn a maximum reward
           of 0.01 BNB for each person referred by their two friends, and so on,
-          up to 15 tiers lower.
+          up to 15 tiers lower. Further, it can go at a maximum of 655 BNB per
+          NFT. Yes, that's it, you heard it right.
         </p>
       </div>
       <div className="mt-10">
