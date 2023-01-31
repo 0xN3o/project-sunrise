@@ -97,9 +97,10 @@ export default function WhitepaperPage(props) {
             NFTs so that you can expand your network.
           </li>
           <li>
-            <span className="font-bold">GET REWARDED</span>: If your referral
-            mints an NFT, you'll instantly be rewarded for your effort. You will
-            also consistently receive rewards when your network grows.
+            <span className="font-bold">GET REWARDED</span>: If someone uses
+            your referral number to mint an NFT, you'll instantly be rewarded
+            for your effort. You will also consistently receive rewards when
+            your network grows.
           </li>
         </ul>
       </div>
@@ -153,7 +154,8 @@ export default function WhitepaperPage(props) {
         <p className="mt-4">
           The person who initially purchased the NFT can earn a maximum reward
           of 0.01 BNB for each person referred by their two friends, and so on,
-          up to 15 tiers lower.
+          up to 15 tiers lower. Further, it can go at a maximum of 655 BNB per
+          NFT. Yes, that's it, you heard it right.
         </p>
       </div>
       <div className="mt-10">
