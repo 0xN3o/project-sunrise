@@ -85,7 +85,8 @@ export default function NFTCard(props) {
       show: true,
       type: "dialog",
       title: "Referral copied",
-      description: "The referral link is copied to the clipboard.",
+      description:
+        "The referral link is copied to the clipboard. You can share this link with others and expand your network.",
     });
   }
 

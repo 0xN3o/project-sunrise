@@ -97,9 +97,10 @@ export default function WhitepaperPage(props) {
             NFTs so that you can expand your network.
           </li>
           <li>
-            <span className="font-bold">GET REWARDED</span>: If your referral
-            mints an NFT, you'll instantly be rewarded for your effort. You will
-            also consistently receive rewards when your network grows.
+            <span className="font-bold">GET REWARDED</span>: If someone uses
+            your referral number to mint an NFT, you'll instantly be rewarded
+            for your effort. You will also consistently receive rewards when
+            your network grows.
           </li>
         </ul>
       </div>
