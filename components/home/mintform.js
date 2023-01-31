@@ -86,7 +86,7 @@ export default function MintForm(props) {
 
   return (
     <div className="w-full mx-auto max-w-lg">
-      Build by degens, for degens. #ProjectSunrise
+      F*ck floor price, maximize your return.
       <form
         className="mt-2 bg-themeRed border-black border-4 p-4"
         onSubmit={formSubmit}

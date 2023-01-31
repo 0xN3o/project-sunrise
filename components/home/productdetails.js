@@ -9,7 +9,7 @@ export default function ProductDetails(props) {
   return (
     <div className="mx-auto px-4 lg:px-12 py-12 max-w-7xl">
       <h2 className="font-bold text-2xl lg:text-4xl text-black pb-12 text-center">
-        Why this is awesome?
+        Why this is cool?
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-black text-sm lg:text-base">
         <div className="col-span-1 bg-themeYellow border-4 border-black p-6">
